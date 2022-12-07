@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.PickupScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_with_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/sixfive"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/onefive"
+            android:paddingEnd="@dimen/onefive">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/two">
+
+                    <TextView
+                        android:id="@+id/textClient"
+                        style="@style/font_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="SP1232"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/onesix" />
+
+                    <TextView
+                        android:id="@+id/textSerialNo"
+                        style="@style/font_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/three"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="SP1232"
+                        android:textColor="@color/colorGreyDark"
+                        android:textSize="@dimen/onezero" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearChildHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/two">
+
+                    <TextView
+                        style="@style/font_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="Delivery note"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/onesix" />
+
+                    <TextView
+                        android:id="@+id/textPickupNote"
+                        style="@style/font_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/three"
+                        android:gravity="end"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="SP1232"
+                        android:textColor="@color/colorGreyDark"
+                        android:textSize="@dimen/onezero" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/five"
+                android:background="@color/colorGreyLite123" />
+
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdfView"
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFinishOrder"
+        style="@style/font_bold"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourzero"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/onefive"
+        android:layout_marginEnd="@dimen/onefive"
+        android:layout_marginBottom="@dimen/onefive"
+        android:background="@drawable/button_sky_grey_10"
+        android:stateListAnimator="@null"
+        android:text="Finish Order"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/onefour" />
+
+    <RelativeLayout
+        android:id="@+id/relativeProgressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_progress_view"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textErrorMessage"
+        style="@style/font_italic"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="PDF not loading\nPlease try again later"
+        android:textColor="@color/colorGreyDark1"
+        android:textSize="@dimen/onefour" />
+
+</RelativeLayout>

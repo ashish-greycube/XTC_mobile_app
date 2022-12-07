@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeGoToHome"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/fivezero"
+    android:layout_height="@dimen/fivezero"
+    android:background="@drawable/bg_button_blue_shadow">
+
+    <ImageView
+        android:layout_width="@dimen/twozero"
+        android:layout_height="@dimen/twozero"
+        android:background="@drawable/icon_menu_dashboard"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/white"/>
+
+</RelativeLayout>

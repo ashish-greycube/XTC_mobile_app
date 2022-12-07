@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/linearTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fourzero"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgAppLogo"
+            android:layout_width="@dimen/oneeightzero"
+            android:layout_height="@dimen/oneeightzero"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/twofive"
+            android:background="@drawable/app_icon" />
+
+        <TextView
+            style="@style/font_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="NATURAL LOW FAT GELATO"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onefour" />
+
+    </LinearLayout>
+
+   <!-- <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/twoeightfive"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/splash_bg_bottom" />-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

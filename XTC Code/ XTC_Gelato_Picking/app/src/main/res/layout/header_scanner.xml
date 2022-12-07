@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeHeaderView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/foureight"
+    android:background="@color/colorBlue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLeft"
+            android:layout_width="@dimen/fivezero"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/imgLeft"
+                android:layout_width="@dimen/twofive"
+                android:layout_height="@dimen/twofive"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/onezero"
+                android:background="@drawable/icon_back"
+                android:backgroundTint="@color/white"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textHeaderText"
+            style="@style/font_bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/fivezero"
+            android:layout_toEndOf="@+id/relativeLeft"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/onesix"
+            android:visibility="visible" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeRight"
+            android:layout_width="@dimen/fivezero"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/imgRight"
+                android:layout_width="@dimen/twofive"
+                android:layout_height="@dimen/twofive"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="@dimen/onezero"
+                android:background="@drawable/icon_scanner"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

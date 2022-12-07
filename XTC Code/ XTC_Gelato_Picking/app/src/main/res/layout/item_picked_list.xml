@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:layout_marginBottom="@dimen/five"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/textBatchCode"
+            style="@style/font_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/ninezero"
+            android:gravity="start"
+            android:text="SP1232"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onesix" />
+
+
+        <LinearLayout
+            android:layout_width="@dimen/ninezero"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textBatchQTY"
+                style="@style/font_bold"
+                android:layout_width="@dimen/fivefive"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/onesix" />
+
+            <RelativeLayout
+                android:id="@+id/relativeDeleteBatch"
+                android:layout_width="@dimen/threefive"
+                android:layout_height="@dimen/twofive">
+
+                <ImageView
+                    android:layout_width="@dimen/twozero"
+                    android:layout_height="@dimen/twozero"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="@color/colorBlue"
+                    android:background="@drawable/icon_delete"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGreyLite2" />
+
+
+</LinearLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".activities.LoginActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/font_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/twozero"
+                    android:text="XTC Gelato"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/twofour" />
+
+                <TextView
+                    style="@style/font_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="NATURAL LOW FAT GELATO"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/onefour" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/threefive"
+                android:padding="@dimen/twozero">
+
+                <TextView
+                    style="@style/font_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/twozero"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/login"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twofour" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twozero">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilUsernameEmail"
+                        style="@style/FormTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingConstraints">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textinputUsernameEmail"
+                            style="@style/font_regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/username_email"
+                            android:inputType="textEmailAddress"
+                            android:paddingStart="@dimen/fourzero"
+                            android:paddingEnd="@dimen/onezero"
+                            android:textColor="@color/black"
+                            android:textCursorDrawable="@drawable/cursor_edittext"
+                            android:textSize="@dimen/onefour" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/twofive"
+                        android:layout_height="@dimen/twofive"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/onezero"
+                        android:layout_marginTop="@dimen/eight"
+                        android:background="@drawable/icon_email1"
+                        android:backgroundTint="@color/colorBlue" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twozero">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilPassword"
+                        style="@style/FormTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingConstraints">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textinputPassword"
+                            style="@style/font_regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:paddingStart="@dimen/fourzero"
+                            android:typeface="normal"
+                            android:paddingEnd="@dimen/fourzero"
+                            android:textColor="@color/black"
+                            android:textCursorDrawable="@drawable/cursor_edittext"
+                            android:textSize="@dimen/onefour" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/twofive"
+                        android:layout_height="@dimen/twofive"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/onezero"
+                        android:layout_marginTop="@dimen/eight"
+                        android:background="@drawable/icon_password1"
+                        android:backgroundTint="@color/colorBlue" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativePasswordHideShow"
+                        android:layout_width="@dimen/threefive"
+                        android:layout_height="@dimen/threefive"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/five"
+                        android:layout_marginEnd="@dimen/five">
+
+                        <ImageView
+                            android:id="@+id/imgPasswordIcon"
+                            android:layout_width="@dimen/twofive"
+                            android:layout_height="@dimen/twofive"
+                            android:layout_centerInParent="true"
+                            android:backgroundTint="@color/colorBlue"
+                            android:background="@drawable/icon_pass_hide" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeWarehouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourtwo"
+                    android:layout_marginTop="@dimen/twozero"
+                    android:background="@drawable/bg_rounded_gray"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone">
+
+
+                    <Spinner
+                        android:id="@+id/spinnerWarehouse"
+                        style="@style/font_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/threezero"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/onezero"
+                        android:layout_marginEnd="@dimen/threezero"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:textSize="@dimen/onefour" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/twozero"
+                        android:layout_height="@dimen/twofive"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/onezero">
+
+                        <ImageView
+                            android:layout_width="@dimen/oneeight"
+                            android:layout_height="@dimen/onezero"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/icon_dropdown" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkboxRememberMe"
+                        style="@style/font_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorBlue"
+                        android:checked="false"
+                        android:padding="@dimen/zero"
+                        android:text="Remember Me"
+                        android:textColor="@color/colorGreyDark" />
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLogin"
+                    style="@style/font_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/five"
+                    android:background="@drawable/button_blue_grey_10"
+                    android:stateListAnimator="@null"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onefour" />
+
+                <TextView
+                    android:id="@+id/textForgotPassword"
+                    style="@style/font_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/onezero"
+                    android:padding="@dimen/five"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/text_click_blur_grey_forgotpass"
+                    android:textSize="@dimen/onefour" />
+
+
+                <TextView
+                    android:id="@+id/textServerURL"
+                    style="@style/font_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/onezero"
+                    android:padding="@dimen/five"
+                    android:text="Set Server URL"
+                    android:textColor="@color/text_click_blur_grey_forgotpass"
+                    android:textSize="@dimen/onefour" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeProgressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_progress_view"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

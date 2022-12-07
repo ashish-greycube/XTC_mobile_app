@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">XTC Gelato</string>
+
+    <string name="retry">Retry</string>
+    <string name="Please_Check_Your_Internet_Connection">Please Check Your Internet Connection.</string>
+    <string name="delete">Delete</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="logout">Logout</string>
+    <string name="logout_message">Are you sure you want to log out?</string>
+
+    <string name="login">Login</string>
+    <string name="username_email">Username or Email</string>
+    <string name="password">Password</string>
+
+    <string name="enter_username_email">Please enter username/email</string>
+    <string name="enter_password">Please enter Password</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="please_set_server_url">Please set server URL</string>
+
+
+</resources>

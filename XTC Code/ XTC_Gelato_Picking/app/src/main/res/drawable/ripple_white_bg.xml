@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/colorBlueLite"
+    tools:targetApi="lollipop"> <!-- ripple effect color -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+
+            <!-- This is the stroke you want to define -->
+            <solid android:color="@color/white" />
+            <!-- Border Color -->
+            <stroke android:width="@dimen/one" android:color="@color/colorBlue" />
+
+            <corners android:radius="@dimen/five" />
+
+
+            <solid android:color="@color/white" /> <!-- background color -->
+        </shape>
+    </item>
+
+</ripple>

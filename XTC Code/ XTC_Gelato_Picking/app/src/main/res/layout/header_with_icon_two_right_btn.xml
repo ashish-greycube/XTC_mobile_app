@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeHeaderView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/foureight"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relativeLeft"
+            android:layout_width="@dimen/fivezero"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/imgLeft"
+                android:layout_width="@dimen/twofive"
+                android:layout_height="@dimen/twofive"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/onezero"
+                android:background="@drawable/icon_back"
+                android:backgroundTint="@color/colorBlue"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/fivezero"
+            android:layout_toEndOf="@+id/relativeLeft"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeaderIcon"
+                    android:layout_width="@dimen/twotwo"
+                    android:layout_height="@dimen/twotwo"
+                    android:layout_marginEnd="@dimen/five"
+                    android:background="@drawable/icon_menu_upcoming_sales_order"
+                    android:backgroundTint="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/textHeaderText"
+                    style="@style/font_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/onesix"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/eightzero"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/five"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/relativeRight"
+                android:layout_width="@dimen/fourzero"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imgRight"
+                    android:layout_width="@dimen/twofive"
+                    android:layout_height="@dimen/twofive"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_refresh"
+                    android:backgroundTint="@color/colorBlue"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativePrintLabelURL"
+                android:layout_width="@dimen/fourzero"
+                android:layout_height="match_parent"
+                android:padding="@dimen/two"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imgPrintLabelURL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_url"
+                    android:backgroundTint="@color/colorBlue"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

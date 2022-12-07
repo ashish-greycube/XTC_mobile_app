@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bg_background_top_corner_16.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/bg_background_top_corner_20.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/bg_border_blue_10.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/bg_border_blur_5_list.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/bg_border_blur_5_list_error.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/bg_border_blur_5_list_normal.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/bg_border_blur_5_list_success.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/bg_border_gray_10.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/bg_button_blue_shadow.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/bg_rounded_bottom_shape.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/bg_rounded_top_shape_stock.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/button_blue_grey_20.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/button_sky_grey_10.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/button_sky_grey_disable_10.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/icon_dropdown.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/progressbar.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/activity_category_list.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_controller.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_help.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_invoice_bill.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_invoice_details.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_live_stock.xml" value="0.34974358974358977" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.33611111111111114" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.34814814814814815" />
+        <entry key="app/src/main/res/layout/activity_pickup_screen.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_sales_order.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_sales_order_details.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_serial_number_list.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_to_pickup_details.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_to_pickup_list.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_transaction_report.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_transaction_report_details.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_web_view.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/dialog_add_serial_layout.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/dialog_barcode_scanner.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/dialog_comman_layout.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/dialog_daterange_selection_layout.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/dialog_sales_order_confirmation_layout.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/dialog_serial_number_layout.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/drawer_layout.xml" value="0.34814814814814815" />
+        <entry key="app/src/main/res/layout/fragment_category.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/header.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/header_scanner.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/header_with_icon.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/header_with_icon_two_right_btn.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_category.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_controller_list.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_dashboard_category.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_dashboard_list.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_invoice_deaitls.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_invoice_order.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_live_stock.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_picked_list.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_popup_details.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_sales_order_list_child.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_serial_number_list.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_to_pickup_list.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_transaction_report_detail_list_child.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/item_transaction_report_detail_list_parent.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/layout_error_view.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/layout_home_button.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/layout_progress_view.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/layout_server_url_set_bottom_sheet.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/layout_update_quantity_bottom_sheet.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/toolbar_custom_layout.xml" value="0.34814814814814815" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

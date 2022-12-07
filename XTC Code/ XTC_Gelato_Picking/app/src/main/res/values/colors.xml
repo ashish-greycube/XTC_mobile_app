@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorBlackTransparent">#50000000</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorGrey">#A8A8A8</color>
+    <color name="colorGreyDark">#FF5E5E5E</color>
+    <color name="colorGreyDark1">#FF8A8A8A</color>
+    <color name="colorGreyDark2">#FF969696</color>
+    <color name="colorGreyDark3">#FFdadada</color>
+    <color name="colorGreyLite2">#FFDCDCDC</color>
+    <color name="colorGreyLite1">#FFF6F6F6</color>
+    <color name="colorGreyLite">#FFCACACA</color>
+    <color name="colorGreyLite123">#EFEFEF</color>
+   <!-- <color name="colorBlue">#FF174173</color>
+    <color name="colorBlueLite">#A4174173</color>-->
+    <color name="colorBlue">#FFE20000</color>
+    <color name="colorBlueLite">#A4E20000</color>
+    <color name="colorBlueLite1">#FFF4FCFF</color>
+    <color name="colorBlueLink">#FF166F97</color>
+    <color name="colorGreen">#FF599743</color>
+    <color name="colorGreenLite">#41009900</color>
+
+    <color name="colorGreenHighlighter">#FF24FF00</color>
+    <color name="colorYellowHighlighter">#FFFFE600</color>
+    <color name="colorBlueLiteBg">#0C174173</color>
+    <color name="coloSkyBlue">#FF90D7E7</color>
+    <color name="coloSkyBlueLite">#C4E6ED</color>
+
+    <color name="colorGreyBox">#FFF6F6F6</color>
+
+</resources>

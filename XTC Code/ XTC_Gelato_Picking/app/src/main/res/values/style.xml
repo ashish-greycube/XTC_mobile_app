@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Splash Screen-->
+    <style name="AppFullScreenTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppToolbarHideTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppToolbarHideThemeStatusBarTransparent" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="statusBarBackground">@color/colorTransparent</item>
+        <item name="colorAccent">@color/colorBlue</item>
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryVariant">@color/colorBlue</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppToolbarHideThemeTextInput" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorAccent">@color/colorBlue</item>
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryVariant">@color/colorBlue</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_background_top_corner_16</item>
+    </style>
+
+
+    <style name="FormTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorGreyBox</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/onezero</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/onezero</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/onezero</item>
+        <item name="boxCornerRadiusTopStart">@dimen/onezero</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxBackgroundColor">@color/colorGreyBox</item>
+        <item name="borderWidth">0dp</item>
+        <item name="paddingStart">@dimen/zero</item>
+        <item name="paddingEnd">@dimen/zero</item>
+    </style>
+
+
+    <style name="FormTextInputLayoutStyle1" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorGreyBox</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/five</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/five</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/five</item>
+        <item name="boxCornerRadiusTopStart">@dimen/five</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxBackgroundColor">@color/colorGreyBox</item>
+        <item name="borderWidth">0dp</item>
+        <item name="paddingStart">@dimen/zero</item>
+        <item name="paddingEnd">@dimen/zero</item>
+    </style>
+
+
+    <style name="ToolbarColoredBackArrow" parent="AppToolbarHideThemeStatusBarTransparent">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="font">@style/font_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <!--/ Regular Fonts /-->
+    <style name="font_regular" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <!--/ Italic Fonts /-->
+    <style name="font_italic" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_italic</item>
+    </style>
+
+    <!--/ Bold Fonts /-->
+    <style name="font_bold" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <!--/ Medium Fonts /-->
+    <style name="font_medium" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+
+</resources>

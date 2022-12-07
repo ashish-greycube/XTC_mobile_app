@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="@dimen/zero"
+    android:padding="@dimen/onezero"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/threezero"
+                android:layout_marginStart="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:layout_marginEnd="@dimen/five">
+
+
+                <TextView
+                    style="@style/font_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Update quantity"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/onefour" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeClose"
+                    android:layout_width="@dimen/threezero"
+                    android:layout_height="@dimen/threezero"
+                    android:layout_alignParentEnd="true"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+                    <ImageView
+                        android:layout_width="@dimen/twofive"
+                        android:layout_height="@dimen/twofive"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_close" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearErrorView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onefive"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10">
+
+                    <TextView
+                        style="@style/font_bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/five"
+                        android:layout_weight="6"
+                        android:gravity="start"
+                        android:text="Batch number:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/onetwo" />
+
+
+                    <TextView
+                        style="@style/font_bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/five"
+                        android:layout_weight="4"
+                        android:gravity="start"
+                        android:text="Qty"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/onetwo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_weight="10">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/threezero"
+                        android:layout_marginEnd="@dimen/five"
+                        android:layout_weight="6"
+                        android:background="@drawable/bg_border_blur_5_list_success"
+                        android:paddingStart="@dimen/onezero"
+                        android:paddingTop="@dimen/five"
+                        android:paddingEnd="@dimen/onezero"
+                        android:paddingBottom="@dimen/five">
+
+                        <TextView
+                            android:id="@+id/textSerialNumber"
+                            style="@style/font_regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:text="Batch number"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/onetwo" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/five"
+                        android:layout_weight="4">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/threezero"
+                            android:layout_marginEnd="@dimen/five"
+                            android:paddingStart="@dimen/five"
+                            android:layout_weight="3"
+                            android:background="@drawable/bg_border_blur_5_list_success">
+
+                            <EditText
+                                android:id="@+id/edtQty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:hint="Qty"
+
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:padding="@dimen/three"
+                                android:singleLine="true"
+                                android:textSize="@dimen/onefour"
+                                tools:ignore="RtlSymmetry" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/threezero"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/imgItemStatus"
+                                android:layout_width="@dimen/onefive"
+                                android:layout_height="@dimen/onefive"
+                                android:layout_centerInParent="true"
+                                android:layout_weight="1"
+                                android:background="@drawable/icon_status_green" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnConfirm"
+                style="@style/font_bold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/onefive"
+                android:layout_weight="1"
+                android:background="@drawable/button_sky_grey_10"
+                android:stateListAnimator="@null"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/onefour" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

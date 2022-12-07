@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="@dimen/zero"
+    android:padding="@dimen/onezero"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/threezero"
+                android:layout_marginStart="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:layout_marginEnd="@dimen/five">
+
+
+                <TextView
+                    style="@style/font_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="@string/please_set_server_url"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/onefour" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeClose"
+                    android:layout_width="@dimen/threezero"
+                    android:layout_height="@dimen/threezero"
+                    android:layout_alignParentEnd="true"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+                    <ImageView
+                        android:layout_width="@dimen/twofive"
+                        android:layout_height="@dimen/twofive"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_close" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/onefive">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilServerUrl"
+                    style="@style/FormTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingConstraints">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputServerUrl"
+                        style="@style/font_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="google.com"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="@dimen/sixone"
+                        android:paddingEnd="@dimen/onezero"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor_edittext"
+                        android:textSize="@dimen/onefour" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/onefour"
+                   android:layout_centerVertical="true"
+                   android:paddingStart="@dimen/onezero"
+                   android:textColor="@color/black"
+                   style="@style/font_regular"
+                   android:text="https://"/>
+
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                style="@style/font_bold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourzero"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/five"
+                android:layout_marginStart="@dimen/onefive"
+                android:layout_marginEnd="@dimen/onefive"
+                android:layout_marginBottom="@dimen/threezero"
+                android:background="@drawable/button_blue_grey_10"
+                android:stateListAnimator="@null"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/onefour" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

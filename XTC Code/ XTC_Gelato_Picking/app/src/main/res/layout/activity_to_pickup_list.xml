@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".activities.ToPickupListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_with_icon"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorGreyLite123"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/five"
+            android:paddingEnd="@dimen/five">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardCornerRadius="@dimen/five"
+                    card_view:cardElevation="@dimen/zero"
+                    card_view:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fourzero"
+                        android:background="@drawable/bg_rounded_gray"
+                        android:layout_centerInParent="true">
+
+                        <EditText
+                            android:id="@+id/edtSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/fourzero"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="Search"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/onezero"
+                            android:singleLine="true"
+                            android:textSize="@dimen/onefour"
+                            tools:ignore="RtlSymmetry" />
+
+                        <RelativeLayout
+                            android:id="@+id/relativeSearch"
+                            android:layout_width="@dimen/fourzero"
+                            android:layout_height="@dimen/fourzero"
+                            android:layout_alignParentEnd="true">
+
+                            <ImageView
+                                android:id="@+id/imgSearch"
+                                android:layout_width="@dimen/oneseven"
+                                android:layout_height="@dimen/oneseven"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/onezero"
+                                android:background="@drawable/icon_search"
+                                android:backgroundTint="@color/colorGreyDark"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="@dimen/fourfive"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardCornerRadius="@dimen/five"
+                    card_view:cardElevation="@dimen/zero"
+                    card_view:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeFilter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@color/colorBlue">
+
+                        <ImageView
+                            android:layout_width="@dimen/twofive"
+                            android:layout_height="@dimen/twofive"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="@dimen/onezero"
+                            android:background="@drawable/icon_filter"
+                            android:backgroundTint="@color/white"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/five">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textCategoryName"
+                    style="@style/font_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/onezero"
+                    android:gravity="start"
+                    android:text="Client/Date"
+                    android:textColor="@color/colorGreyDark1"
+                    android:textSize="@dimen/onefour" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/five"
+                android:layout_height="match_parent">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerLiveStock"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="none"
+                            tools:itemCount="5"
+                            tools:listitem="@layout/item_to_pickup_list" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/sixfive" />
+
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/relativeErrorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <include layout="@layout/layout_error_view"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeProgressView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <include layout="@layout/layout_progress_view"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/onezero"
+        android:visibility="gone"
+        android:paddingEnd="@dimen/onezero">
+
+        <include layout="@layout/layout_home_button" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

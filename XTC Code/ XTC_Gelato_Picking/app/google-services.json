@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "818795741820",
+    "project_id": "amrutenergy-4d0eb",
+    "storage_bucket": "amrutenergy-4d0eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818795741820:android:0802f3cf3cdcf5c91cfff9",
+        "android_client_info": {
+          "package_name": "com.xtc.gelato"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818795741820-444l4k4mpd15gdos9ghd7lefthd6vqs7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xtc.gelato",
+            "certificate_hash": "15422b27bffd829f7e823dda49c18c4ea536b99e"
+          }
+        },
+        {
+          "client_id": "818795741820-3nrcunvieogdl1htr9t9mbuc0vjmofee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqwjSXPm7pFQ_OOGLViwecD_ZBczAd8eY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818795741820-3nrcunvieogdl1htr9t9mbuc0vjmofee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
