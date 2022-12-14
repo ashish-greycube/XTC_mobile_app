@@ -58,6 +58,7 @@ class ToPickupListAdapter : RecyclerView.Adapter<ToPickupListAdapter.MyViewHolde
         holder.itemView.setOnClickListener {
 
             if(arrLiveStock[position].picker == "" || arrLiveStock[position].picker == AppPreference.getStringPreference(activity!!,AppPreference.userEmail)){
+
                 val imm = activity!!.getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE) as InputMethodManager
                 imm.hideSoftInputFromWindow(holder.itemView.windowToken, 0)
 
@@ -68,6 +69,7 @@ class ToPickupListAdapter : RecyclerView.Adapter<ToPickupListAdapter.MyViewHolde
                 intent.putExtra("picker_instruction", arrLiveStock[position].pickerInstruction)
                 activity!!.startActivity(intent)
                 activity!!.overridePendingTransition(R.anim.enter, R.anim.exit)
+
             }
 
         }

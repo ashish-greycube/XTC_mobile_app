@@ -10,6 +10,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.text.InputType
 import android.view.KeyEvent
 import android.view.View
 import android.view.ViewGroup
@@ -140,28 +141,6 @@ class ToPickupDetailsActivity : AppCompatActivity() {
                     val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(printLabelURL))
                     startActivity(browserIntent)
 
-
-//                  // Internal browser open....
-//                  val intent = Intent(this, WebViewActivity::class.java)
-//                  intent.putExtra("web_url",printLabelURL)
-//                  startActivity(intent)
-//                  overridePendingTransition(R.anim.enter, R.anim.exit)
-
-//                  // GET API Call...
-//                  printLabelGetCall(printLabelURL)
-//                  AppConstants.ToastMessage(this@ToPickupDetailsActivity,"Done")
-
-
-//                  Handler(Looper.getMainLooper()).postDelayed({
-//
-//                      var i: Intent = Intent()
-//                      i = packageManager.getLaunchIntentForPackage("com.xtc.gelato")!!
-//                      i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-//                      i.addCategory(Intent.ACTION_MAIN)
-//                      startActivity(i)
-//
-//                  },5000)
-
                 }else{
                     AppConstants.ToastMessage(this@ToPickupDetailsActivity,resources.getString(R.string.Please_Check_Your_Internet_Connection))
                 }
@@ -175,16 +154,7 @@ class ToPickupDetailsActivity : AppCompatActivity() {
         linearHeaderTitle.setOnClickListener { relativeLeft.performClick() }
 
         relativeLeft.setOnClickListener {
-
             onBackPressed()
-
-//            if(currentPosition > 0){
-//                currentPosition -= 1
-//                reloadChildData()
-//            }else{
-//                onBackPressed()
-//            }
-
         }
 
         relativeRight.setOnClickListener {
@@ -193,18 +163,6 @@ class ToPickupDetailsActivity : AppCompatActivity() {
             }else{
                 AppConstants.CheckConnection(this)
             }
-
-//            AppConstants.scannedBarCode = ""
-//            if (ActivityCompat.checkSelfPermission(this@ToPickupDetailsActivity, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-//                startActivity(Intent(this, BarcodeScannerActivity::class.java))
-//                overridePendingTransition(R.anim.enter, R.anim.exit)
-//            } else {
-//                ActivityCompat.requestPermissions(
-//                    this@ToPickupDetailsActivity,
-//                    arrayOf(Manifest.permission.CAMERA),
-//                    REQUEST_CAMERA_PERMISSION
-//                )
-//            }
 
         }
 
@@ -632,14 +590,6 @@ class ToPickupDetailsActivity : AppCompatActivity() {
 
     }
 
-    override fun onResume() {
-        super.onResume()
-
-//        if(AppConstants.isNotEmpty(AppConstants.scannedBarCode)){
-//            scanCodeAction(AppConstants.scannedBarCode,false,"")
-//        }
-
-    }
 
     private fun scanCodeAction(scannedCode:String, isEdit: Boolean, editQty: String,currentQty:String){
 
@@ -1135,27 +1085,6 @@ class ToPickupDetailsActivity : AppCompatActivity() {
             list.add(value)
         }
         return list
-    }
-
-
-    private fun printLabelGetCall(url:String) {
-
-        AppConstants.LOGE("URL printLabelGetCall :-", url)
-
-        val call: Call<ResponseBody> = API.getAPI().commonGetApiCall(url)
-
-        call.enqueue(object : retrofit2.Callback<ResponseBody>{
-            override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
-                val jsonObject = JSONObject(response.body()!!.string())
-                AppConstants.LOGE("response printLabelGetCall => ",jsonObject.toString())
-            }
-
-            override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
-                AppConstants.LOGE("printLabelGetCall error message => " , t.message.toString())
-            }
-
-        })
-
     }
 
 
